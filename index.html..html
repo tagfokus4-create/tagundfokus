@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung — Tag &amp; Fokus</title>
+<style>
+  :root {
+    --grund: #ffffff;
+    --text: #1a1d20;
+    --text2: #5a6269;
+    --linie: #e2e5e8;
+    --akzent: #2e6b57;
+    --kasten: #f5f7f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --grund: #0e1216;
+      --text: #ecf1f4;
+      --text2: #a7b3bc;
+      --linie: #28323a;
+      --akzent: #83c9ae;
+      --kasten: #171d23;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--grund);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.01em; }
+  h2 {
+    font-size: 1.05rem; margin: 2.6rem 0 .7rem; letter-spacing: -.005em;
+    padding-top: 1.4rem; border-top: 1px solid var(--linie);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p, li { color: var(--text); }
+  .stand { color: var(--text2); font-size: .9rem; margin: 0 0 2.5rem; }
+  .kasten {
+    background: var(--kasten); border-radius: 12px;
+    padding: 1.1rem 1.25rem; margin: 1.5rem 0;
+  }
+  .kasten p { margin: 0; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .4rem 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em; background: var(--kasten);
+    padding: .1em .35em; border-radius: 4px;
+  }
+  a { color: var(--akzent); }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.4rem;
+    border-top: 1px solid var(--linie);
+    color: var(--text2); font-size: .9rem;
+  }
+  strong { font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Datenschutzerklärung</h1>
+  <p class="stand">Tag &amp; Fokus (Android) · Stand: 12. September 2026</p>
+
+  <div class="kasten">
+    <p><strong>Kurz gesagt:</strong> Tag &amp; Fokus hat keine Internet-Berechtigung.
+    Die App kann technisch keine Daten senden. Alles, was du aufzeichnest, bleibt auf
+    deinem Gerät. Es gibt keine Konten, keine Registrierung, keine Werbung und kein
+    Tracking.</p>
+  </div>
+
+  <h2>Verantwortlich</h2>
+  <p>
+    Valerio Da Mocogno<br>
+    Schweiz<br>
+    E-Mail: tagfokus4@gmail.com
+  </p>
+
+  <h2>Welche Daten die App speichert</h2>
+  <p>
+    Alle folgenden Daten werden ausschliesslich lokal auf deinem Gerät gespeichert und
+    von dort nirgendwohin übertragen:
+  </p>
+  <ul>
+    <li><strong>Deine Fokus-Blöcke:</strong> der von dir vergebene Modusname sowie
+      Start- und Endzeit. Daraus entstehen die Tagesübersicht und die Statistik.</li>
+    <li><strong>Deine NFC-Tags:</strong> die Seriennummer (UID) des Chips und der Name,
+      den du ihm gegeben hast.</li>
+    <li><strong>Deine Auswahl gesperrter Apps:</strong> die Liste der App-Namen, die du
+      selbst ausgewählt hast.</li>
+  </ul>
+  <p>
+    Die App erhebt <strong>keine</strong> Namen, E-Mail-Adressen, Telefonnummern,
+    Kontakte, Standortdaten, Fotos oder Geräte-Kennungen.
+  </p>
+
+  <h2>Welche Berechtigungen die App braucht und wofür</h2>
+  <ul>
+    <li><strong>NFC</strong> — um beim Antippen die Seriennummer deines Tags zu lesen
+      und daran zu erkennen, welchen Modus du starten willst.</li>
+    <li><strong>Zugriff auf Nutzungsdaten</strong> (<code>PACKAGE_USAGE_STATS</code>) —
+      um zu erkennen, welche App gerade im Vordergrund ist. Nur so kann die App wissen,
+      dass sie eine von dir gesperrte App überlagern soll.</li>
+    <li><strong>Über anderen Apps anzeigen</strong> (<code>SYSTEM_ALERT_WINDOW</code>) —
+      um den Sperrbildschirm über eine gesperrte App zu legen.</li>
+    <li><strong>Vordergrunddienst</strong> — damit die Überwachung weiterläuft, solange
+      ein Modus aktiv ist. Android verlangt dafür eine dauerhaft sichtbare
+      Benachrichtigung.</li>
+    <li><strong>Benachrichtigungen</strong> — ausschliesslich für diese eine
+      Benachrichtigung. Die App sendet keine Werbe- oder Hinweismeldungen.</li>
+  </ul>
+
+  <div class="kasten">
+    <p><strong>Wichtig zum Zugriff auf Nutzungsdaten:</strong> Die App fragt jede
+    Sekunde ab, welche App gerade im Vordergrund ist, und vergleicht das mit deiner
+    Sperrliste. Dieser Wert wird <strong>nicht gespeichert und nicht übertragen</strong>.
+    Es entsteht keine Aufzeichnung darüber, welche Apps du benutzt. Sobald kein Modus
+    läuft, findet die Abfrage gar nicht mehr statt.</p>
+  </div>
+
+  <h2>Keine Weitergabe an Dritte</h2>
+  <p>
+    Es werden keine Daten an Dritte weitergegeben, verkauft oder für Werbung verwendet.
+    Die App bindet keine Analyse-, Absturzberichts- oder Werbedienste ein.
+  </p>
+  <p>
+    Das ist keine blosse Zusage: Die App fordert die Berechtigung
+    <code>android.permission.INTERNET</code> nicht an. Ohne diese Berechtigung kann eine
+    Android-App keine Netzwerkverbindung aufbauen. Eine Datenübertragung ist damit
+    technisch ausgeschlossen.
+  </p>
+
+  <h2>Speicherdauer und Löschung</h2>
+  <p>
+    Die Daten bleiben so lange auf deinem Gerät, bis du sie löschst. Du hast zwei
+    Möglichkeiten:
+  </p>
+  <ul>
+    <li>In den Android-Einstellungen unter <em>Apps → Tag &amp; Fokus → Speicher →
+      Daten löschen</em></li>
+    <li>Die App deinstallieren — damit werden alle zugehörigen Daten entfernt</li>
+  </ul>
+  <p>
+    Da nichts übertragen wird, existiert ausserhalb deines Geräts keine Kopie, die
+    gelöscht werden müsste.
+  </p>
+
+  <h2>Deine Rechte</h2>
+  <p>
+    Nach schweizerischem Datenschutzgesetz und der europäischen
+    Datenschutz-Grundverordnung hast du das Recht auf Auskunft, Berichtigung, Löschung
+    und Datenübertragbarkeit. Da alle Daten ausschliesslich auf deinem Gerät liegen und
+    niemand sonst Zugriff darauf hat, übst du diese Rechte unmittelbar selbst aus —
+    über die App und die Android-Einstellungen. Bei Fragen kannst du dich jederzeit an
+    die oben genannte Adresse wenden.
+  </p>
+
+  <h2>Kinder</h2>
+  <p>
+    Die App richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine
+    Daten von ihnen.
+  </p>
+
+  <h2>Änderungen dieser Erklärung</h2>
+  <p>
+    Sollte sich am Umgang mit Daten etwas ändern — etwa weil eine künftige Version der
+    App eine Netzwerkverbindung benötigt —, wird diese Seite vorher aktualisiert und
+    das Datum oben angepasst.
+  </p>
+
+  <h2>Kontakt</h2>
+  <p>
+    Bei Fragen zum Datenschutz in Tag &amp; Fokus:
+    tagfokus4@gmail.com
+  </p>
+
+  <footer>
+    Tag &amp; Fokus · Android-App · Paketname <code>ch.modus.fokus</code>
+  </footer>
+
+</main>
+</body>
+</html>
